@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+
+<body>
+  <nav>
+    <button class="a" id="portfolio">Portfolio</button>
+    <a href="#sec1"><button class="home btn">Home</button></a>
+    <a href="#project"><button  class="proj btn">Projects</button></a>
+    <a href="#sec3"><button class="about btn">About</button></a>
+    <a href="#sec4"><button class="contact btn">Contact</button></a>
+    </nav>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>  
+        <section id="sec1" class="bg" style="overflow: hidden; ">
+          <div >
+          <!-- <div id="Sec1Div"> -->
+         <div data-aos="slide-right" data-aos-duration="1200" data-aos-mirror="true"><a href="https://www.instagram.com/official_anubhavpanfer/" target="_blank"> <img class="img" src="img/myimg.png" ></a></div>
+         <h1  data-aos="slide-left"data-aos-duration="1200" data-aos-mirror="true" class="hello">Hola peeps!!</h1>
+         <div data-aos="slide-right" data-aos-duration="1200" data-aos-mirror="true" class="introBox" >
+            
+            <p class="bio">I am Anubhav, an enthusiastic fresher who is highly motivated with great leadership skills. Seeking a challenging position in the field of computer science so as to utilize my skills for organization and individual growth.</p>
+          </div>
+        </div>
+        </section>
+
+
+        <section id="sec2" class="bg" style="padding-top: 10vh;">
+         
+
+          
+          <div id="project"></div>
+          <h1 class="hello" style="font-size: 4em;">Projects</h1>
+          <div  class="projects">
+            <div class="Prj1" data-aos="slide-left" data-aos-duration="1000" data-aos-mirror="true" >
+              <h1 class="heading">Tic Tac Toe</h1>
+              <a href="https://affectionate-roentgen-421d3d.netlify.app/" target="_blank"> <img class="tictactoe" src="img/tictactoe.png" width="70%" height= "70%"></a>
+              
+            </div>
+            <div class="Prj2" data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true" >
+              <h1 class="hello">Note Taking</h1>
+              <a href="https://keen-kirch-6aaf49.netlify.app/" target="_blank"> <img class="tictactoe" src="img/notes.png" width="72%" height= "86%"></a>
+            </div>
+            <div class="Prj3" data-aos="slide-right" data-aos-duration="1000" data-aos-mirror="true" >
+              <h1 class="hello">Tic Tac Toe</h1>
+              <a href="https://affectionate-roentgen-421d3d.netlify.app/" target="_blank"> <img class="tictactoe" src="img/tictactoe.png" width="70%" height= "70%"></a>
+              
+            </div>
+          </div>
+        
+        </section>
+        <section id="sec3" class="bg" >
+          <div style="padding-top: 5vh;" data-aos="flip-right" data-aos-duration="1000" data-aos-mirror="true"><x>Curious about how my resume looks like Here you can find out</x>
+          <a href="https://drive.google.com/uc?export=download&id=1Hl5ijd3ciRbAX5OETU1rCHnt-2v5bdkU" download rel="noopener noreferrer" ><button class="resume">Resume</button></a>
+        </div>
+        </section>
+        <section id="sec4" class="bg" style="padding-top: 10vh;">
+          <div class="aboutMe">
+          <div data-aos="zoom-out-down" data-aos-duration="1200" data-aos-mirror="true"><h1>Ask <span>Me</span><br><span>Anything</span>!!!</h1></div>
+          <div data-aos="zoom-out-up" data-aos-duration="1200" data-aos-mirror="true"><p>Feel free to ask me any question about my projects, portfolio or if you have any other inquires. Fill out the form below or send me an email to <a href="mailto:anubhavpanfer@gmail.com" target="_blank" >anubhavpanfer@gmail.com</a></p></div>
+          <form style="margin-top: 2vh;" class="formfield" onsubmit="fun(); return false" >
+            
+            <div data-aos="zoom-out-right" data-aos-duration="1200" data-aos-mirror="true"><input type="text" id="name" placeholder="Name" required><br></div>
+              <div data-aos="zoom-out-left" data-aos-duration="1200" data-aos-mirror="true"><input type="email" id="mail" placeholder="Email Id" required><br></div>
+            <div data-aos="zoom-out-right" data-aos-duration="1200" data-aos-mirror="true"><textarea placeholder="Message" id="msg" required></textarea><br></div>
+              <div data-aos="zoom-out-up" data-aos-duration="1200" data-aos-mirror="true"><input type="submit" id="submit23" value="Send Message"></div>
+          </form>
+        </div>
+        <div class="logoDiv" >
+          <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-mirror="true" data-aos-offset="-20"><a href="https://www.facebook.com/anubhav.panfer.5/" target="_blank">  <img class="logo"  src="img/fb.png"> </a></div>
+          <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-mirror="true" data-aos-offset="-20"><a href="https://www.instagram.com/official_anubhavpanfer/" target="_blank"><img style="margin-left: 3.5vw;" class="logo" src="img/insta.png"></a></div>
+          <div data-aos="zoom-in-left" data-aos-duration="800" data-aos-mirror="true" data-aos-offset="-20"><a href="https://linkedin.com/in/anubhav-685b491a6" target="_blank"><img class="logo" style="margin-left: 3.5vw;" src="img/linkdin.png"> </a></div>
+        </div>
+        </section>
+        
+    
+
+        <script src="app.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    
+</body>
+
+
+</html>
+
+

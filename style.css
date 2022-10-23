@@ -1,0 +1,302 @@
+html {
+  /* background: radial-gradient(rgb(245, 200, 78), rgb(250, 248, 149)); */
+  /* overflow-y: scroll; */
+  scroll-behavior: smooth;
+  height: 100%;
+  /* overflow-y: unset; */
+  /* background-repeat: no-repeat; */
+}
+body {
+  /* background-repeat: no-repeat; */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* background: radial-gradient(rgb(250, 114, 60), rgb(63, 0, 0)); */
+}
+nav {
+  padding-top: 1.5vh;
+  height: 5.5vh;
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  text-align: right;
+  position: fixed;
+  z-index: 10;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.progress-bar {
+  height: 5px;
+  background: rgb(250, 248, 149);
+  width: 0%;
+}
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: rgb(34, 34, 34);
+  z-index: 11;
+  position: fixed;
+  margin-top: 6.5vh;
+}
+.btn {
+  color: rgb(250, 248, 149);
+  background-color: rgb(34, 34, 34);
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  height: 4vh;
+  border-radius: 10px;
+}
+.about {
+  margin-right: 5vw;
+  width: 4.5vw;
+}
+
+.home {
+  margin-right: 5vw;
+  width: 4.5vw;
+}
+.proj {
+  margin-right: 5vw;
+  width: 4.5vw;
+}
+.contact {
+  margin-right: 3vw;
+  width: 5.5vw;
+}
+
+.bg {
+  background-image: url("img/sunset.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  /* padding-top: 7vh; */
+  /* overflow-y: scroll; */
+}
+
+.home:hover,
+.contact:hover,
+.about:hover,
+.proj:hover {
+  /* background-color: rgb(250, 248, 149); */
+  /* #ff8c00 */
+  /* color: black; */
+  color: #ff8c00;
+  transform: scale(1.5);
+}
+.a {
+  color: rgb(250, 248, 149);
+  font-size: 1.3em;
+  background: none;
+  border: none;
+  margin-right: 53vw;
+  transition: transform 1s;
+  /* position: fixed; */
+  /* left: 3vw; */
+  /* top: 2vh; */
+}
+.a:hover {
+  transform: rotate(720deg) scale(1.8);
+}
+section {
+  height: 100vh;
+}
+
+.img {
+  border-radius: 50%;
+  background-color: rgba(204, 204, 197, 0.3);
+  width: 21vw;
+  height: 45vh;
+  margin-top: 10vh;
+  margin-left: 40vw;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.introBox {
+  width: 65vw;
+  height: 22vh;
+  background-color: rgba(204, 204, 197, 0.3);
+  margin: auto;
+}
+.bio {
+  font-size: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(250, 248, 149);
+  text-align: center;
+  padding: 5%;
+}
+.hello {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgb(243, 207, 0);
+}
+.projects {
+  width: 100%;
+  height: 70vh;
+  /* background-color: rgba(204, 204, 197, 0.3); */
+  margin: auto;
+  display: flex;
+  margin-top: 5vh;
+}
+.Prj1 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  /* background-color: tomato; */
+}
+.Prj2 {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+}
+.Prj3 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  /* background-color: white; */
+}
+
+.tictactoe {
+  margin: 15%;
+}
+
+.heading {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgb(243, 207, 0);
+}
+
+.resume {
+  background-color: rgba(238, 255, 0, 0.473);
+  /* background-color: transparent; */
+  color: #002242;
+  border: none;
+  width: 15vw;
+  height: 10vh;
+  font-size: 2em;
+  margin-left: 15vw;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.resume:hover {
+  transform: scale(1.2);
+  content: none;
+}
+#sec3 {
+  padding-top: 40vh;
+}
+x {
+  font-size: 2em;
+  color: rgb(243, 207, 0);
+  margin-left: 5vw;
+}
+
+/* #Sec1Div {
+  animation-name: sec1;
+  animation-duration: 2.5s;
+  position: relative;
+  animation-timing-function: linear;
+}
+@keyframes sec1 {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0vh;
+  }
+} */
+
+input {
+  color: rgb(34, 34, 34);
+  background-color: rgba(204, 204, 197, 0.3);
+  margin-top: 3vh;
+  font-size: 1em;
+  padding: 0.25em;
+  width: 23vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+}
+::placeholder {
+  color: rgb(34, 34, 34);
+}
+textarea {
+  color: rgb(34, 34, 34);
+  margin-top: 3vh;
+  font-size: 1em;
+  width: 23vw;
+  height: 15vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  resize: none;
+  padding: 0.25em;
+  border: none;
+  background-color: rgba(204, 204, 197, 0.3);
+}
+
+#sec4 {
+  text-align: center;
+}
+#sec4 h1 {
+  font-size: 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#submit23 {
+  margin-top: 3vh;
+  font-size: 1.1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(243, 207, 0);
+  background-color: rgb(34, 34, 34);
+  border: none;
+  cursor: pointer;
+  height: 5.5vh;
+  width: 11vw;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#submit23:hover {
+  color: rgb(34, 34, 34);
+  background-color: rgb(250, 248, 149);
+  /* opacity: 0.8; */
+}
+
+.logo {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+#sec4 h1 {
+  padding-top: 1vh;
+  font-size: 2.5em;
+}
+
+.aboutMe {
+  width: 35vw;
+  height: 75vh;
+  background-color: rgba(204, 204, 197, 0.3);
+  margin: auto;
+}
+#sec4 p {
+  font-size: 1.15em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 3.5em;
+}
+.logoDiv {
+  display: flex;
+  margin-top: 4vh;
+  justify-content: center;
+}
+#sec4 p a {
+  color: #c5c900;
+}
+span {
+  color: rgb(243, 207, 0);
+}
